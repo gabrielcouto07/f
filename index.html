@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Convite Especial 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div id="tela1" class="container">
+        <div class="secao-motivos">
+            <div class="motivo-col">
+                <strong>Motivos para eu querer sair com você:</strong>
+                <p>Voce é linda, engraçada, interessante e outras 1000 coisas.</p>
+            </div>
+            <div class="linha-vertical"></div>
+            <div class="motivo-col">
+                <strong>Motivos para você sair comigo:</strong>
+                <p>Só Deus sabe, porem que bom!</p>
+            </div>
+        </div>
+
+        <img id="imagem-surpresa" src="foto-surpresa.jpg" alt="Foto Surpresa" class="foto-surpresa">
+        
+        <h1>Quando vamos nos ver? </h1>
+        <p>Escolha a data antes de prosseguir:</p>
+        <button onclick="proximaTela()">Próximo</button>
+    </div>
+
+   <div id="tela2" class="container hidden">
+    <h1>Escolha uma data perfeita:</h1>
+    <div class="opcoes-grid">
+        <button onclick="confirmar('Sexta 23')">Sexta, 23</button>
+        <button onclick="confirmar('Sexta 30')">Sexta, 30</button>
+        <button onclick="confirmar('Sábado 24')">Sábado, 24</button>
+        <button onclick="confirmar('Sábado 31')">Sábado, 31</button>
+        <button id="btn-fugitivo" onclick="fugir()">Nunca</button>
+    </div>
+    <p id="mensagem-zueira" style="color: #ff4d4d; margin-top: 15px; font-weight: 600; min-height: 1.2em;"></p>
+</div>
+
+<div id="tela3" class="container hidden">
+        <h1>Marcado! </h1>
+        <p id="detalhes"></p>
+        <img id="imagem-final" src="foto-final.jpg" alt="Sucesso" class="img-final-ajustada">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

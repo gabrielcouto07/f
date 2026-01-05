@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body {
+    background-color: #1a1a1a; /* Fundo escuro moderno */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    background: #2d2d2d; /* Cartão cinza escuro */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    max-width: 400px;
+    width: 100%;
+}
+
+.hidden { display: none; }
+
+/* Motivos com visual mais sóbrio */
+.secao-motivos {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+    text-align: left;
+    background: #383838;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.motivo-col { flex: 1; font-size: 0.75em; }
+.motivo-col strong { color: #4dabf7; display: block; margin-bottom: 4px; }
+.linha-vertical { width: 1px; background-color: #555; align-self: stretch; }
+
+/* Foto do Gato/Perfil */
+.foto-surpresa {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px; /* Quadrado arredondado em vez de círculo */
+    object-fit: cover;
+    border: 2px solid #4dabf7;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #4dabf7; /* Azul destaque */
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p { color: #b0b0b0; font-size: 0.9em; }
+
+/* Botões Estilo "Tech" */
+.opcoes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #4dabf7;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+}
+
+#btn-fugitivo {
+    background: #495057;
+    color: #ced4da;
+    grid-column: span 2;
+    transition: all 0.1s ease; /* Movimento mais rápido e seco */
+    cursor: pointer;
+}
+
+/* Estilo para a imagem da última tela */
+.img-final-ajustada {
+    width: 100%;          /* Ocupa a largura do card */
+    max-width: 250px;     /* Mas não passa de 250px (ajuste como preferir) */
+    height: auto;         /* Mantém a proporção */
+    border-radius: 12px;  /* Mantém o padrão de bordas que usamos */
+    margin-top: 20px;
+    border: 2px solid #4dabf7;
+    display: block;       /* Centraliza */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Garante que o container da tela 3 tenha espaço suficiente */
+#tela3 {
+    padding: 40px 20px;
+}
