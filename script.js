@@ -26,7 +26,7 @@ function confirmarAgendamento() {
     document.getElementById('tela2').classList.add('hidden');
     document.getElementById('tela3').classList.remove('hidden');
     
-    document.getElementById('detalhes').innerHTML = `Está combinado!<br>📅 <strong>${dataFormatada}</strong> às 🕒 <strong>${horaInput}</strong>;
+    document.getElementById('detalhes').innerHTML = `Está combinado!<br>📅 <strong>${dataFormatada}</strong> às 🕒 <strong>${horaInput}</strong>.🕒';
 }
 
 function fugir() {
