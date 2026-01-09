@@ -17,7 +17,7 @@ function confirmarAgendamento() {
     const horaInput = document.getElementById('hora').value;
 
     if (!dataInput || !horaInput) {
-        document.getElementById('mensagem-zueira').innerText = "Escolha a data e a hora, não foge! 😂";
+        document.getElementById('mensagem-zueira').innerText = "Escolha a data e a hora, não foge! ";
         return;
     }
 
@@ -26,7 +26,7 @@ function confirmarAgendamento() {
     document.getElementById('tela2').classList.add('hidden');
     document.getElementById('tela3').classList.remove('hidden');
     
-    document.getElementById('detalhes').innerHTML = `Está combinado!<br>📅 <strong>${dataFormatada}</strong> às 🕒 <strong>${horaInput}</strong>.<br>Não aceito atrasos! 🚀`;
+    document.getElementById('detalhes').innerHTML = `Está combinado!<br>📅 <strong>${dataFormatada}</strong> às 🕒 <strong>${horaInput}</strong>;
 }
 
 function fugir() {
@@ -47,4 +47,5 @@ function fugir() {
     btn.style.position = 'fixed'; // 'fixed' funciona melhor para fugir da tela toda
     btn.style.left = x + 'px';
     btn.style.top = y + 'px';
+
 }
