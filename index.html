@@ -2,57 +2,58 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Convite Especial 🚀</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial 🚀</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-   <div id="tela1" class="container">
+    <div id="tela1" class="container">
         <div class="secao-motivos">
             <div class="motivo-col">
                 <strong>Motivos para eu querer sair com você:</strong>
-                <p>Voce é linda, engraçada, interessante e outras 1000 coisadsderydrf.</p>
+                <p>Você é linda, engraçada, interessante e outras 1000 coisas.</p>
             </div>
             <div class="linha-vertical"></div>
             <div class="motivo-col">
                 <strong>Motivos para você sair comigo:</strong>
-                <p>Só Deus sabe, porem que bom!</p>
+                <p>Só Deus sabe, mas que bom que vai!</p>
             </div>
         </div>
 
         <img id="imagem-surpresa" src="foto-surpresa.jpg" alt="Foto Surpresa" class="foto-surpresa">
         
-        <h1>Quando vamos nos ver? </h1>
+        <h1>Quando vamos nos ver?</h1>
         <p>Escolha a data antes de prosseguir:</p>
         <button onclick="proximaTela()">Próximo</button>
     </div>
 
-   <div id="tela2" class="container hidden">
-    <h1>Escolha o momento perfeito:</h1>
+    <div id="tela2" class="container hidden">
+        <h1>Escolha o momento perfeito:</h1>
 
-    <div class="seletores">
-        <div class="campo">
-            <label for="data"> Que dia?</label>
-            <input type="date" id="data">
+        <div class="seletores">
+            <div class="campo">
+                <label for="data">Que dia?</label>
+                <input type="date" id="data">
+            </div>
+
+            <div class="campo">
+                <label for="hora">Que horas?</label>
+                <input type="time" id="hora">
+            </div>
         </div>
 
-        <div class="campo">
-            <label for="hora"> Que horas?</label>
-            <input type="time" id="hora">
+        <div class="botoes-acao">
+            <button onclick="confirmarAgendamento()">Confirmar</button>
+            <button id="btn-fugitivo" onmouseover="fugir()" onclick="fugir()">Nunca</button>
         </div>
+
+        <p id="mensagem-zueira" style="color: #ff4d4d; margin-top: 15px; font-weight: 600; min-height: 1.2em;"></p>
     </div>
 
-    <div class="botoes-acao">
-        <button onclick="confirmarAgendamento()">Confirmar</button>
-        <button id="btn-fugitivo" onmouseover="fugir()" onclick="fugir()">Nunca</button>
-    </div>
-
-    <p id="mensagem-zueira" style="color: #ff4d4d; margin-top: 15px; font-weight: 600; min-height: 1.2em;"></p>
-</div>
-
-<div id="tela3" class="container hidden">
-        <h1>Marcado! </h1>
+    <div id="tela3" class="container hidden">
+        <h1>Marcado!</h1>
         <p id="detalhes"></p>
         <img id="imagem-final" src="foto-final.jpg" alt="Sucesso" class="img-final-ajustada">
     </div>
